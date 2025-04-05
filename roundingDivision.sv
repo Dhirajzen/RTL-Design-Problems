@@ -1,4 +1,4 @@
-module model #(parameter
+module roundDivision #(parameter
   DIV_LOG2=3,
   OUT_WIDTH=32,
   IN_WIDTH=OUT_WIDTH+DIV_LOG2
