@@ -1,4 +1,4 @@
-module model #(parameter
+module grayCodeCounter #(parameter
   DATA_WIDTH = 4
 ) (
   input clk,
