@@ -11,7 +11,7 @@ module model #(parameter
 genvar i;
 generate
     for(i=0; i < DATA_WIDTH; i++) begin
-        if(i==0) begin
+        if(i==0) begin //first FA block with cin = 0
             full_adder f(
                 .a(a[i]),
                 .b(b[i]),
@@ -20,7 +20,7 @@ generate
                 .cout(cout_int[i])
             );
         end
-        else begin
+        else begin // consequent FA blocks with cin = previous cout
             full_adder f(
                 .a(a[i]),
                 .b(b[i]),
