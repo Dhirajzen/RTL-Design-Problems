@@ -1,5 +1,5 @@
 `include "full_adder.sv"
-module model #(parameter
+module RCA #(parameter
     DATA_WIDTH=8
 ) (
     input [DATA_WIDTH-1:0] a,
